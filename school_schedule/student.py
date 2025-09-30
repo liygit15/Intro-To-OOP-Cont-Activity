@@ -5,7 +5,7 @@ class Student:
         self.classes = classes
 
     def add_class(self, class_name):
-        self.classes.append(class_name)
+        self.classes.extend(class_name)
         return self.classes
 
     def get_num_classes(self):
@@ -19,5 +19,5 @@ class Student:
             f"enrolled in {self.get_num_classes()} classes: "
             f"{self.display_classes()}")
         
-        
+    
     
